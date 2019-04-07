@@ -1,0 +1,645 @@
+@media only screen and (max-width : 1570px)
+  .main
+    &-image
+      img
+        transform: scale(1.2)
+
+@media only screen and (max-width : 1400px)
+  .main
+    &-image
+      img
+        transform: scale(1.1)
+
+@media only screen and (max-width : 1290px)
+  .container
+    width: 95%
+  .main
+    &-image
+      img
+        transform: scale(1)
+    &-text
+      &__title
+        font-size: 31px
+        line-height: 36px
+  .modal__window
+    width: 90%
+  .slider
+    &__item
+      img
+        max-width: 95%
+  .arrow
+    &_left
+      margin-left: -24px
+    &_right
+      transform: translateX(21px)
+  .footer
+    &-feedback
+      &__container
+        &-form
+          margin-left: 30%
+
+@media only screen and (max-width : 1208px)
+  .froze
+    &-image
+      &_center
+        display: none
+
+@media only screen and (max-width : 1090px)
+  .footer
+    &-feedback
+      &__container
+        &-form
+          margin-left: 20%
+  .success-top
+    left: 0
+  .froze
+    &-img
+      &__box
+        display: flex
+        justify-content: space-around
+        &_l
+          min-width: 150px
+          font-size: 15px
+  .repairs
+    padding: 50px 0
+    &-title
+      font-size: 25px
+
+@media only screen and (max-width : 1020px)
+  .slick-slider
+    max-width: 800px
+    margin-left: 10%
+    margin-right: 5%
+
+@media only screen and (max-width : 1062px)
+  .container
+    width: 95%
+  .main
+    &-image
+      img
+        display: flex
+        margin: auto
+    &-wrap
+      flex-direction: column
+    &-text
+      max-width: 400px
+      margin: auto
+      &__title
+        text-align: center
+        span
+          font-size: 15px
+    &-advantages
+      margin: auto
+      &__text
+        font-size: 16px
+  .form
+    text-align: center
+    margin: auto
+    &__subtitle
+      color: darken(#333333, 30)
+  .feedback
+    background: none
+    &:before
+      background: url('../img/feedback/bg-img-feedback.jpg') no-repeat left
+      background-size: cover
+      width: 100%
+  .modal
+    flex-direction: column
+    &__input
+      display: block
+      text-align: center
+      width: 369px
+      margin-left: 5px
+      &:first-child
+        margin-top: 40px
+    &__window
+      flex-direction: column
+      width: 550px
+      overflow: auto
+      height: 100%
+    &__box
+      &-shadow
+        padding-top: 65px
+        padding-bottom: 55px
+        width: 550px
+      &-white
+        width: 550px
+        order: -1
+        &_container
+          padding-top: 50px
+        &_close
+          top: 25px
+          right: 35px
+        &_form
+          &-footer
+            margin-bottom: 56px
+  .portfolio
+    &:before
+      display: none
+  .section
+    &-feedback
+      background: url(../img/footer-feedback/footer-feedback.png) no-repeat center 100%
+      background-size: cover
+      position: relative
+      z-index: 1
+      &:before
+        content: ''
+        left: 0
+        top: 0
+        height: 49%
+        width: 100%
+        background-color: #ffc000
+        position: absolute
+        z-index: -1
+  .footer
+    &-feedback
+      display: flex
+      flex-direction: column
+      height: 100%
+      &__description
+        margin: auto
+        &_title
+          text-align: center
+          margin-top: 60px
+        &_subtitle
+          text-align: center
+          color: #000000
+        &_list
+          margin-left: 6%
+          margin-top: 50px
+      &__form
+        margin: auto
+        &_title
+          font-size: 19px
+          width: 100%
+          margin-top: 30px
+          margin-bottom: 20px
+        &_text
+          color: #000000
+      &_input
+        width: 520px
+        text-align: center
+        &:first-child
+          margin-top: 20px
+      &_button
+        width: 520px
+      &__container-form
+        width: 100%
+        margin: auto
+  .top-input
+    margin-right: 0
+
+@media only screen and (max-width : 885px)
+  .repairs
+    &-title
+      br
+        display: none
+
+@media only screen and (max-width : 830px)
+  .portfolio
+    padding-top: 35px
+    padding-bottom: 60px
+  .section
+    &-title
+      font-size: 26px
+      margin-bottom: 40px
+    &-feedback
+      &:before
+        height: 50%
+  .footer
+    &-feedback
+      &__description
+        &_title
+          margin-top: 60px
+          margin-bottom: 15px
+        &_list
+          margin-top: 50px
+        &_button
+          margin-top: 15px
+          margin-bottom: 15px
+      &__form
+        &_text
+          margin-bottom: 40px
+  .froze
+    &-title
+      font-size: 25px
+      line-height: 35px
+      margin-bottom: 20px
+    &-subtitle
+      font-size: 18px
+      margin: 0
+    &-img
+      &__box
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        margin-top: 30px
+        &_l
+          margin-bottom: 50px
+      &_subtitle
+        font-size: 12px
+
+@media only screen and (max-width : 821px)
+  .price
+    padding-top: 50px
+    padding-bottom: 70px
+    &-title
+        margin-bottom: 20px
+    &-subtitle
+        margin-bottom: 30px
+
+@media only screen and (max-width : 769px)
+  .container
+    width: 95%
+  .main
+    &-wrap
+      flex-direction: column
+    &-text
+      max-width: 400px
+      margin: auto
+      &__title
+        text-align: center
+  .form
+    text-align: center
+    &__input:first-child
+      margin-right: 5px
+    &__button
+      width: 550px
+      margin: auto
+    &__footer
+      &_text
+        margin: auto
+        &-right
+          margin: auto
+  .section-title_center
+    font-size: 20px
+    line-height: 30px
+    margin-bottom: 40px
+  .portfolio
+    padding-top: 35px
+    padding-bottom: 40px
+  .top-input
+    margin-right: 0
+  .price
+    &-title
+      font-size: 25px
+    &-subtitle
+      font-size: 18px
+
+@media only screen and (max-width : 705px)
+  .repairs
+    &-title
+      font-size: 22px
+@media only screen and (max-width : 600px)
+  .footer
+    &-feedback
+      &__description
+        width: 95%
+        &_title
+          font-size: 17px
+        &_list
+          li
+            font-size: 15px
+            width: 385px
+      &__form
+        width: 100%
+        &_title
+          font-size: 18px
+      &_input
+        width: 95%
+      &_button
+        width: 95%
+  .repairs
+    &-title
+      font-size: 20px
+      +bold
+      line-height: 25px
+
+@media only screen and (max-width : 595px)
+  .form__footer_text-right:before
+    display: none
+
+@media only screen and (max-width : 576px)
+  .main
+    padding-top: 20px
+    padding-bottom: 30px
+    &-text
+      &__title
+        font-size: 25px
+        margin-bottom: 20px
+        span
+          margin-top: 0
+    &-advantages__text
+      font-size: 18px
+  .header
+    &-wrap
+      padding-top: 10px
+      padding-bottom: 15px
+      display: flex
+      flex-direction: column
+    &-logo
+      display: flex
+      margin: auto
+    &-text
+      margin: 0
+      &__phone
+        margin: 0
+      &__city
+        margin: 0
+    &__button
+      width: 176px
+      height: 50px
+      padding: 5px 20px
+  .feedback
+    padding-top: 20px
+    padding-bottom: 40px
+  .form
+    text-align: center
+    &__input
+      width: 90%
+      text-align: center
+    &__title
+      font-size: 18px
+      text-align: center
+    &__subtitle
+      font-size: 16px
+    &__button
+      width: 90%
+      font-size: 14px
+      margin: auto
+      span
+        display: none
+    &__footer
+      text-align: center
+      display: flex
+      flex-direction: column
+      &_text
+        margin-bottom: 10px
+        width: 100%
+  .modal
+    &__window
+      width: 400px
+    &__box
+      &-shadow
+        width: 400px
+        &_container
+          width: 350px
+        &_title
+          font-size: 14px
+        &_price
+          font-size: 14px
+      &-white
+        width: 400px
+        &_close
+          top: 20px
+          right: 20px
+        &_container
+          width: 350px
+        &_form
+          &-title
+            font-size: 20px
+            padding-bottom: 10px
+          &-subtitle
+            font-size: 14px
+          &-footer
+            font-size: 12px
+            a
+              font-size: 20px
+    &__input
+      width: 330px
+      margin-left: 10px
+      font-size: 14px
+    &__button
+      width: 330px
+      font-size: 14px
+  .section-title_center
+    font-size: 19px
+    br
+      display: none
+  .portfolio
+    padding-top: 50px
+    padding-bottom: 40px
+  .footer
+    &-feedback
+      &__form
+        &_title
+          font-size: 16px
+        &_subtitle
+          font-size: 13px
+      &__description
+        &_list
+          li
+            padding-left: 50px
+            &:before
+              padding: 8px 11px
+  .price
+    &-title
+      font-size: 22px
+    &-subtitle
+      font-size: 18px
+  .froze
+    &-title
+      font-size: 20px
+    &-subtitle
+      font-size: 15px
+  .repairs
+    padding-bottom: 30px
+    &-title
+      font-size: 20px
+    
+@media only screen and (max-width : 464px)
+  .footer
+    &-feedback
+      margin: auto
+      &__description
+        &_title
+          font-size: 17px
+          margin-top: 25px
+          line-height: 25px
+        &_list
+          margin-left: 0
+          margin-top: 20px
+          li
+            width: 320px
+            padding-bottom: 20px
+            padding-left: 45px
+            &:before
+              width: 30px
+              height: 30px
+              font-size: 12px
+              padding: 7px 10px
+              border: 1px solid #000000
+        &_title
+          line-height: 25px
+          font-size: 15px
+      &_button
+        font-size: 13px
+  .section
+    &-feedback
+      &:before
+        height: 43%
+  .top-input
+    margin-top: 20px
+  .mid-input
+    margin-top: 30px
+
+@media only screen and (max-width : 440px)
+  .froze
+    &-title
+      br
+        display: none
+@media only screen and (max-width : 402px)
+  .header-text__phone
+    font-size: 16px
+  .modal
+    &__input
+      width: 280px
+      margin-left: 5px
+      &:first-child
+        margin-top: 15px
+        margin-bottom: 10px
+    &__button
+      width: 280px
+      margin-top: 10px
+    &__window
+      width: 300px
+    &__box
+      &-white
+        width: 300px
+        &_container
+          width: 290px
+        &_form
+          &-title
+            font-size: 14px
+            line-height: 15px
+          &-subtitle
+            font-size: 14px
+            line-height: 16px
+          &-footer
+            margin-top: 20px
+            margin-bottom: 20px
+      &-shadow
+        padding-top: 20px
+        padding-bottom: 20px
+        width: 300px
+        &_content
+          img
+            margin-right: 7px
+        &_container
+          width: 290px
+        &_description
+          margin-top: 20px
+  .section-title_center
+    font-size: 15px
+    margin-bottom: 30px
+  .price
+    &-title
+      font-size: 20px
+    &-subtitle
+      font-size: 16px
+@media only screen and (max-width : 365px)
+  .header
+    padding-top: 10px
+    margin-bottom: 10px
+    &-wrap
+      display: flex
+      flex-direction: column
+    &-logo
+      margin: 0 0 13px 0
+      img
+        width: 100px
+        height: 50px
+    &-text
+      display: flex
+      flex-direction: column
+      &__contacts
+        margin-right: 0
+        text-align: center
+        margin-bottom: 13px
+      &__city
+        margin: 0
+        font-size: 14px
+        margin-bottom: 7px
+      &__phone
+        font-size: 15px
+        margin-left: 0
+    &__button
+      position: relative
+      padding: 5px
+      width: 120px
+      height: 40px
+      margin-top: 0
+      span
+        display: none
+  .main
+    &-text
+      &__title
+        font-size: 20px
+        span
+          font-size: 15px
+    &-advantages__text
+      font-size: 15px
+  .feedback
+    padding-top: 20px
+  .form
+    &__title
+      font-size: 15px
+      line-height: 25px
+      margin-bottom: 20px
+      margin-top: 0
+    &__subtitle
+      margin-bottom: 20px
+      font-size: 14px
+    &__input 
+      width: 95%
+    &__button
+      width: 95%
+    &_footer
+      &_tel
+        font-size: 16px
+  .slick-slider
+    margin-left: 6%
+    margin-right: 5%
+    max-width: 100%
+  .slide-list
+    max-width: 100px
+  .slider__item
+    img
+      max-width: 100%
+  .footer
+    &-feedback
+      &__description
+        width: 100%
+        &_title
+          font-size: 15px
+        &_subtitle
+          line-height: 25px
+          font-size: 13px
+          height: 40px
+        &_list
+          margin-left: 0
+          margin-top: 20px
+          li
+            width: 100%
+            font-size: 15px
+            padding-bottom: 10px
+            padding-left: 44px
+            &:before
+              width: 23px
+              height: 23px
+              font-size: 12px
+              margin-bottom: 10px
+              padding: 5px 7px
+              top: -3px
+              left: 10px
+        &_title
+          line-height: 25px
+          font-size: 16px
+        &_text
+          font-size: 15px
+  .section
+    &-feedback
+      &:before
+        height: 42%
+  .card
+    min-height: 200px

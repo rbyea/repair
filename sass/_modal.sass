@@ -1,0 +1,147 @@
+.modal
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(#000,  0.52)
+  left: 0
+  top: 0
+  z-index: 3
+  display: flex
+  display: none
+  &-feedback
+    position: relative
+  &_visible
+    display: flex
+  &__window
+    width: 1170px
+    height: 674px
+    background-color: #fff
+    margin: auto
+    display: flex
+  &__box
+    &-shadow
+      width: 600px
+      background-color: #f7f7f7
+      padding-top: 80px
+      &_container
+        width: 420px
+        margin: auto
+      &_content
+        display: flex
+        align-items: center
+        margin-bottom: 15px
+        img
+          margin-right: 27px
+      &_text
+        vertical-align:middle
+      &_title
+        position: relative
+        font-size: 16px
+        height: 27px
+        +mid
+        &:after
+          position: absolute
+          content: ''
+          height: 2px
+          width: 42px
+          background-color: $accent
+          left: 0px
+          bottom: 0px
+      &_price
+        line-height: 22px
+        font-size: 16px
+        margin-top: 13px
+        +mid
+        span
+          +bold
+      &_description
+        margin-top: 53px
+        &-title
+          +bold
+          font-size: 14px
+          font-weight: 400
+          line-height: 45px
+        &-lines
+          ul
+            margin: 0
+            padding: 0
+            list-style: none
+          li
+            font-size: 14px
+            line-height: 25px
+            +light
+            position: relative
+            list-style-type: none
+            padding-left: 20px
+            &:before
+              content: ''
+              position: absolute
+              height: 7px
+              width: 7px
+              vertical-align: middle
+              border-radius: 50%
+              background-color: $accent
+              margin-right: 15px
+              left: 0
+              top: 9px
+    &-white
+      width: 570px
+      position: relative
+      &_close
+        position: absolute
+        top: 15px
+        right: 15px
+        &:hover
+          cursor: pointer
+      &_container
+        width: 380px
+        margin: auto
+        padding-top: 72px
+      &_form
+        text-align: center
+        &-title
+          font-size: 22px
+          font-weight: 400
+          line-height: 33px
+          +bold
+          margin: 0
+        &-subtitle
+          text-align: center
+          font-size: 16px
+          font-weight: 400
+          line-height: 35px
+          +light
+          margin-bottom: 50px
+        &-footer
+          font-size: 15px
+          font-weight: 400
+          line-height: 20px
+          margin-top: 33px
+          width: 273px
+          margin: 33px auto 76px auto
+          +light
+          a
+            font-size: 24px
+            font-weight: 400
+            line-height: 24px
+            +bold
+            
+  &__input
+    margin: 0
+    width: 370px
+    &:first-child
+      margin-top: 53px
+      margin-bottom: 15px
+  &__button
+    width: 368px
+    height: 70px
+    margin-right: 0
+    margin-top: 30px
+    font-size: 16px
+    font-weight: 400
+    line-height: 18px
+    +bold
+
+.mid-input
+  margin-top: 53px
+  margin-bottom: 15px

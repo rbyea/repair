@@ -1,0 +1,73 @@
+.feedback
+  padding: 94px 0
+  background: url('../img/feedback/bg-img-feedback.jpg') no-repeat center left 100%
+  background-size: contain
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    left: 0
+    top: 0
+    height: 100%
+    width: 56.5%
+    background-color: #ffffff
+    position: absolute
+    z-index: -1
+.form
+  max-width: 575px
+  &__title
+    font-size: 24px
+    +bold
+    line-height: 35px
+    margin-bottom: 45px
+  &__subtitle
+    display: block
+    margin-bottom: 45px
+  &__input
+    width: 270px
+    margin-bottom: 30px
+    &:first-child
+      margin-right: 30px
+  &__button
+    padding: 24px
+    padding-right: 34px
+    display: block
+    width: 575px
+    height: 70px
+    font-size: 16px
+  &__footer
+    display: flex
+    font-size: 14px
+    margin-top: 30px
+    &_text
+      font-size: 15px
+      line-height: 24px
+      width: 226px
+      &-right
+        margin-left: 138px
+        font-size: 15px
+        position: relative
+        &:before
+          content: ''
+          width: 40px
+          height: 40px
+          border-radius: 50%
+          border: 2px solid #cccccc
+          background-size: 20px
+          position: absolute
+          display: block
+          right: 111px
+          background: url('../img/feedback/phone.png') no-repeat center
+          margin-right: 100px
+          margin-top: 2px
+    &_tel
+      margin-top: 10px
+      display: block
+      text-decoration: none
+      color: $text-color
+      +bold
+      font-size: 15px
+
+.top-input
+  margin-right: 30px
+  

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <title>Ремонт квартиры</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/png">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=4b502f81-595a-43fc-896a-26cc42e96d71&lang=ru_RU"></script>
+  <!-- Yandex.Metrika counter -->
+  <script>
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })
+      (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+    ym(51463484, "init", {
+      id: 51463484,
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      trackHash: true
+    });
+  </script>
+</head>
+<body>
+  <div><img src="https://mc.yandex.ru/watch/51463484" style="position:absolute; left:-9999px;" alt="yandex" /></div>
+  <header class="header">
+    <div class="container header-wrap">
+      <div class="header-logo">
+        <img src="img/header-logo.png" alt="logo">
+      </div>
+      <div class="header-text">
+        <div class="header-text__contacts">
+          <span class="header-text__city">Калуга, Москва, МО</span>
+          <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
+        </div>
+        <button class="button header__button" id="button-callback">Перезвоните <span class="hidden-xs">мне</span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <div class="main-wrap">
+        <div class="main-text wow fadeInLeft">
+          <h1 class="main-text__title">
+            Внутренняя отделка помещений "под ключ"
+            <span>с гарантией качества, прописанной в договоре</span>
+          </h1>
+          <div class="main-advantages">
+            <div class="main-advantages__item wow fadeIn" data-wow-delay="0.8s">
+              <div class="main-advantages__img main-advantages__img-1"></div>
+              <div class="main-advantages__text">
+                Точно соблюдаем сроки
+              </div>
+            </div>
+            <div class="main-advantages__item wow fadeIn" data-wow-delay="1s">
+              <div class="main-advantages__img main-advantages__img-2"></div>
+              <div class="main-advantages__text">
+                Рассчитаем смету на работы и материалы в день обращения
+              </div>
+            </div>
+            <div class="main-advantages__item wow fadeIn" data-wow-delay="1.2s">
+              <div class="main-advantages__img main-advantages__img-3"></div>
+              <div class="main-advantages__text">
+                Предложим более 100 вариантов исполнения дизайна Вашего жилья
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="main-image">
+          <img src="img/main-img.png" alt="План-схема">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="form">
+        <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
+        <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+        <form id="feedback" action="mailer/smart.php" method="POST">
+          <div class="success success-top"><span>Спасибо за заявку!</span></div>
+          <input type="text" name="fio" class="input top-input input-name form__input" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" id="phone-one" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{2}{0,1}\d{2}[-]{0,1}\d{3}" class="input input-tel form__input" placeholder="Ваш телефон" required>
+          <button type="submit" class="button form__button">Получить <span>бесплатный</span> дизайн-проект</button>
+        </form>
+        <div class="form__footer">
+          <div class="form__footer_text"> Наш менеджер перезвонит Вам в течение 60 секунд</div>
+          <div class="form__footer_text-right">
+            или перезвоните нам <span>сами</span>
+            <a class="form__footer_tel" href="tel:+74954225131">+7 (495) 42-251-31</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal open" id="modal-callback">
+    <div class="modal__window">
+      <div class="modal__box-shadow">
+        <div class="modal__box-shadow_container">
+          <div class="modal__box-shadow_content">
+            <img class="imag" src="img/modal/header/img-1.png" alt="bathroom">
+            <div class="modal__box-shadow_text">
+              <div class="modal__box-shadow_title">
+                Ванная комната
+              </div>
+              <div class="modal__box-shadow_price">
+                135*150 - <span>31 000 руб.</span> <br>
+                170*170 - <span>43 000 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal__box-shadow_content">
+            <img src="img/modal/header/img-2.png" alt="bathroom">
+            <div class="modal__box-shadow_text">
+              <div class="modal__box-shadow_title">
+                Туалет
+              </div>
+              <div class="modal__box-shadow_price">
+                135*70 - <span>14 000 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal__box-shadow_content">
+            <img src="img/modal/header/img-3.png" alt="bathroom">
+            <div class="modal__box-shadow_text">
+              <div class="modal__box-shadow_title">
+                Совмещенный санузел
+              </div>
+              <div class="modal__box-shadow_price">
+                170*210 - <span>54 000 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal__box-shadow_description">
+            <div class="modal__box-shadow_description-title">
+              В стоимость работ входит
+            </div>
+            <div class="modal__box-shadow_description-lines">
+              <ul>
+                <li><span>Демонтаж старого покрытия стен и пола</span></li>
+                <li><span>Выравнивание стен гипсовыми составами</span></li>
+                <li><span>Грунтовка стен и пола антисептиком, бетоноконтактом</span></li>
+                <li><span>Монтаж кафельной плитки на полу и стенах</span></li>
+                <li><span>Установка реечного или натяжного потолка, светильников</span></li>
+                <li><span>Монтаж двери с коробкой</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__box-white">
+        <div class="modal__box-white_close">&#10006;</div>
+        <div class="modal__box-white_container">
+          <div class="modal__box-white_form">
+            <h2 class="modal__box-white_form-title">Узнайте точную стоимость ремонта по телефону!</h2>
+            <span class="modal__box-white_form-subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+            <form class="modal-feedback" action="mailer/smart.php" method="POST">
+              <div class="success"><span>Спасибо за заявку!</span></div>
+              <input type="text" name="fio" class="input mid-input input-name modal__input" placeholder="Ваше имя"
+                required>
+              <input type="tel" name="phone" id="phone-two" class="input input-tel modal__input" placeholder="Ваш телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{2}{0,1}\d{2}[-]{0,1}\d{3}" required>
+              <button type="submit" class="button modal__button">Узнать стоимость</button>
+            </form>
+            <div class="modal__box-white_form-footer">
+              Или Вы можете перезвонить нам сами по телефону:
+              <a class="form__footer_tel" href="tel:+74954225131">+7 (495) 42-251-31</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="section-title section-title_center">
+        Работая с 2007 года,<br>
+        мы сделали более 500 ремонтов в квартирах и домах
+      </h2>
+      <div class="owl-carousel">
+        <div class="owl-carousel__item" id="slider-2">
+          <img src="img/slider/img-1.png" alt="room">
+        </div>
+        <div class="owl-carousel__item">
+          <img src="img/slider/img-2.png" alt="room">
+        </div>
+        <div class="owl-carousel__item">
+          <img src="img/slider/img-3.png" alt="room">
+        </div>
+        <div class="owl-carousel__item">
+          <img src="img/slider/img-1.png" alt="room">
+        </div>
+        <div class="owl-carousel__item">
+          <img src="img/slider/img-2.png" alt="room">
+        </div>
+        <div class="owl-carousel__item">
+          <img src="img/slider/img-3.png" alt="room">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="price">
+    <div class="container">
+      <h2 class="section-title_center price-title wow fadeInUp">У нас очень гибкая система скидок<br> на комплексные
+        работы!</h2>
+      <!-- /.section-title_center section-title -->
+      <h3 class="price-subtitle section-subtitle_center wow fadeInUp">Прайс на наши услуги</h3>
+      <!-- /.section-subtitle -->
+      <div class="price-wrap">
+        <div class="card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="card__img-wrap">
+            <img src="img/price/img-1.png" alt="" class="card__img">
+          </div>
+          <h4 class="card_title">Ремонт ванных комнат и с/у</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.4s">
+          <div class="card__img-wrap">
+            <img src="img/price/img-2.png" alt="" class="card__img">
+          </div>
+          <h4 class="card_title">Ремонт комнат и квартир</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.6s">
+          <div class="card__img-wrap">
+            <img src="img/price/img-3.png" alt="" class="card__img">
+          </div>
+          <h4 class="card_title">Отделка офисных помещений</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="card__img-wrap">
+            <img src="img/price/img-4.png" alt="" class="card__img">
+          </div>
+          <h4 class="card_title">Ремонт в новостройках</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.4s">
+          <div class="card__img-wrap">
+            <img src="img/price/img-5.png" alt="" class="card__img">
+          </div>
+          <h4 class="card_title">Ремонт кухонь</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.6s">
+          <div class="card__img-wrap">
+            <img src="img/price/img-6.png" alt="" class="card__img">
+          </div>
+          <h4 class="card_title">Ремонт дач и коттеджей</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+      </div>
+      <!-- /.price-wrap -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.price -->
+
+  <section class="froze">
+    <div class="container">
+      <div class="froze-title">Наши специалисты готовы выехать на замер<br> в любое удобное для Вас время</div>
+      <h3 class="froze-subtitle">5 шагов до ремонта</h3>
+      <div class="froze-img__box">
+        <div class="froze-img__box_l wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="froze-img__box_radius">
+            <img src="img/forze/woman.png" alt="women">
+          </div>
+          <div class="foroze-img_subtitle">Вы звоните нам или оставляете заявку</div>
+        </div>
+        <div class="froze-image_center wow fadeInLeft" data-wow-delay="0.4s">
+          <img src="img/forze/arrow.png" alt="arrow">
+        </div>
+        <div class="froze-img__box_l wow fadeInLeft" data-wow-delay="0.6s">
+          <div class="froze-img__box_radius">
+            <img src="img/forze/clock.png" alt="clock">
+          </div>
+          <div class="foroze-img_subtitle">Согласуем удобное для Вас время выезда специалиста на замер</div>
+        </div>
+        <div class="froze-image_center wow fadeInLeft" data-wow-delay="0.8s">
+          <img src="img/forze/arrow.png" alt="arrow">
+        </div>
+        <div class="froze-img__box_l wow fadeInLeft" data-wow-delay="1s">
+          <div class="froze-img__box_radius">
+            <img src="img/forze/cash.png" alt="cash">
+          </div>
+          <div class="foroze-img_subtitle">Рассчитываем смету согласовываем с Вами</div>
+        </div>
+        <div class="froze-image_center wow fadeInLeft" data-wow-delay="1.2s">
+          <img src="img/forze/arrow.png" alt="arrow">
+        </div>
+        <div class="froze-img__box_l wow fadeInLeft document" data-wow-delay="1.4s">
+          <div class="froze-img__box_radius">
+            <img src="img/forze/document.png" alt="document">
+          </div>
+          <div class="foroze-img_subtitle">Подписываем договор закупаем материал по оптовым ценам</div>
+        </div>
+        <div class="froze-image_center wow fadeInLeft" data-wow-delay="1.6s">
+          <img src="img/forze/arrow.png" alt="arrow">
+        </div>
+        <div class="froze-img__box_l wow fadeInLeft" data-wow-delay="1.8s">
+          <div class="froze-img__box_radius">
+            <img src="img/forze/calendar.png" alt="calendar">
+          </div>
+          <div class="foroze-img_subtitle">Выполняем ремонт в указанные сроки</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.froze -->
+
+  <section class="repairs">
+    <div class="container">
+      <h2 class="repairs-title wow pulse">Ремонт обойдется Вам дешевле, так как<br> мы используем качественные
+        материалы по оптовым ценам</h2>
+    </div>
+  </section>
+  <!-- /.repairs -->
+
+  <section class="aside">
+    <div class="container">
+      <div class="aside-content">
+        <div class="aside-content__block">
+          <h2 class="aside-content__block_title">Поможем закупить все материалы по оптовым ценам у проверенных
+            поставщиков</h2>
+          <div class="aside-content__block_image">
+            <img class="image-one" src="img/aside/image-1.png" alt="image">
+          </div>
+        </div>
+        <!-- /.aside-content__block -->
+        <div class="aside-content__block">
+          <div class="aside-content__block_title">Мы дадим Вам <span>максимальные скидки</span> у наших партнеров для
+            закупки материалов оптом</div>
+          <div class="aside-content__block_image">
+            <img src="img/aside/image-2.png" alt="image">
+          </div>
+        </div>
+        <!-- /.aside-content__block -->
+        <div class="aside-content__block">
+          <div class="aside-content__block_title">Все, что не сможете найти в городе - поможем заказать <span>у
+              проверенных поставщиков</span></div>
+          <div class="aside-content__block_image">
+            <img class="image-three" src="img/aside/image-3.png" alt="iamge">
+          </div>
+        </div>
+        <!-- /.aside-content__block -->
+      </div>
+    </div>
+  </section>
+  <!-- /.aside -->
+
+  <div class="warranty">
+    <div class="container">
+      <div class="warranty-title">Все наши гарантийные обязательства<br> подробно и прозрачно описаны в договоре</div>
+      <div class="warranty-content">
+        <div class="warranty-content__block">
+          <img src="img/warranty/image-1.png" alt="document">
+          <div class="warranty-subtitle__text">Гарантия на качество выполняемых работ</div>
+        </div>
+        <div class="warranty-content__block">
+          <img src="img/warranty/imag-2.png" alt="document">
+          <div class="warranty-subtitle__text center-text">Гарантия на фиксированные цены Виды работ и цены на них
+            прописаны в договоре</div>
+        </div>
+        <div class="warranty-content__block">
+          <img src="img/warranty/image-3.png" alt="document">
+          <div class="warranty-subtitle__text">Гарантия на точное соблюдение сроков и ответственность за их
+            невыполнение</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.warranty -->
+
+  <section class="section-feedback">
+    <div class="container">
+      <div class="footer-feedback">
+        <div class="footer-feedback__description">
+          <div class="footer-feedback__description_title wow fadeIn" data-wow-delay="0.2s">
+            Мы можем озвучить Вам примерную стоимость работы и материалов по телефону
+          </div>
+          <div class="footer-feedback__description_subtitle wow fadeIn" data-wow-delay="0.4s">Для этого нужно ответить
+            на 4 вопроса:</div>
+          <div class="footer-feedback__description_list">
+            <ol class="wow lightSpeedIn" data-wow-delay="0.2s">
+              <li>Какова площадь помещения?</li>
+              <li>У Вас новостройка или вторичное жилье?</li>
+              <li>Где находится помещение, в котором будет производиться ремонт?</li>
+              <li>Назначение помещения?</li>
+            </ol>
+          </div>
+        </div>
+        <div class="footer-feedback__form">
+          <div class="footer-feedback__container-form">
+            <h2 class="footer-feedback__form_title">Оставьте заявку на бесплатный расчет ремонта по телефону</h2>
+            <span class="footer-feedback__form_subtitle">Для этого заполните форму ниже</span>
+            <form id="form-feedback" action="mailer/smart.php" method="POST">
+              <div class="success"><span>Спасибо за заявку!</span></div>
+              <input type="text" name="fio" class="input input-name top-input footer-feedback_input" placeholder="Ваше имя" required>
+              <input type="tel" name="phone" id="footer-unput__tel" class="input input-tel footer-feedback_input" placeholder="Ваш телефон"
+                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{2}[-]{0,1}\d{2}[-]{0,1}\d{3}" required>
+              <button type="submit" class="button footer-feedback_button">Расчитать стоимость</button>
+            </form>
+            <div class="footer-feedback__form_text"> Мы перезвоним Вам в течение 60 секунд</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.section-feedback -->
+
+  <footer class="footer">
+    <div class="footer-map" id="map"></div>
+    <div class="footer-contacts">
+      <div class="footer-contacts__container">
+        <div class="footer-contacts__container_title">Приезжайте к нам в гости!</div>
+        <div class="footer-contacts__container_subtitle">Проконсультируем Вас<br>по всем вопросам ремонта</div>
+        <div class="footer-contacts__container_description">
+          <div class="footer-contacts__container-box">
+            <div class="footer-contacts__container-box_img">
+              <img src="img/footer/map-placeholder.png" alt="map">
+            </div>
+            <div class="footer-contacts__container-box_text">
+              г. Москва
+              <div>
+                <a class="footer-text" target="_blank" href="https://yandex.ru/maps/-/CBFcIXTgKB">ул. Ленинга, д. 10,<br>
+                  корпус 2, оф. 308</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-contacts__container-box">
+            <div class="footer-contacts__container-box_img">
+              <img class="clock" src="img/footer/clock-with-white-face.png" alt="clock">
+            </div>
+            <div class="footer-contacts__container-box_text">
+              Режим работы:
+              <div>
+                <span class="footer-text">
+                  с 9:00 до 18:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-contacts__container-box">
+            <div class="footer-contacts__container-box_img">
+              <img src="img/footer/phone-call-button.png" alt="phone">
+            </div>
+            <div class="footer-contacts__container-box_text">
+              Телефон:
+              <div>
+                <a class="footer-text" href="tel:+74954225131">+ 7 (495) 42-251-318</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /.footer -->
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="/js/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    document.querySelector('#button-callback').addEventListener('click', function () {
+      yaCounter51463484.reachGoal('btn');
+      return true;
+    })
+  </script>
+
+</body>
+
+</html>

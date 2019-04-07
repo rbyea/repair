@@ -1,0 +1,61 @@
+@import 'normalize'
+@import 'fonts'
+@import 'var'
+@import 'mixins'
+@import 'interface'
+
+@import 'header'
+@import 'style'
+@import 'feedback'
+@import 'modal'
+@import 'portfolio'
+@import 'section-feedback'
+@import 'price'
+@import 'froze'
+@import 'repairs'
+@import 'footer'
+
+*, *:before, *:after
+  box-sizing: border-box
+
+body
+  font-family: 'Museo Sans light', sans-serif
+  color: $text-color
+
+.container
+  width: 1170px
+  margin: 0 auto
+
+img
+  max-width: 100%
+
+.main
+  &-image
+    img
+      transform: scale(1.35)
+      transform-origin: top left
+      z-index: 2
+      position: relative
+      box-shadow: 5px 5px 30px 0.1px #c3c6c2
+
+.section
+  &-title
+    +bold
+    line-height: 45px
+    font-size: 30px
+    &_center
+      text-align: center
+.price
+  &-title
+    text-align: center
+    +bold
+    font-size: 30px
+    line-height: 45px
+  &-subtitle
+      font-size: 20px
+      text-align: center
+      margin-bottom: 45px
+
+
+
+@import 'media'
